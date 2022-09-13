@@ -69,20 +69,14 @@
         $('#message').click(function() {
           select('message')
         })
-
+        select("default")
         function selectnone(){
           for (x in k) {
             $("#" + k[x]).removeClass(selected)
           }
         }
 
-        function select(i) {
-          for (x in k) {
-            $("#" + k[x]).removeClass(selected)
-          }
-          $("#" + i).addClass(selected)
-          $('#selected').load(`${i}.html`)
-        }
+       
         w = window.screen.width;
         h = window.screen.height;
         if (w < 640) {
@@ -100,6 +94,14 @@
           })
         }
       });
+
+      function select(i) {
+          for (x in k) {
+            $("#" + k[x]).removeClass(selected)
+          }
+          $("#" + i).addClass(selected)
+          $('#selected').load(`${i}.html`)
+        }
     </script>
   </body>
 </html>

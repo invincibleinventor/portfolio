@@ -5,7 +5,7 @@
 <body>
     <div id="aboutcont" class="flex flex-col  h-screen bg-[url(https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png)] w-full ">
 
-<div class="flex flex-row p-3 bg-cyan-900 sm:bg-gray-100 items-center content-center px-5 pl-4">
+<div class="flex fixed top-0 w-full flex-row p-3 bg-cyan-900 sm:bg-gray-100 items-center content-center px-5 pl-4">
     <button class="block mr-4 sm:hidden"onclick="$(
     '#selected'
     ).addClass('hidden');$('#chats').show();selectnone()"><span class="iconify sm:text-black text-white" data-icon="ant-design:arrow-left"></button>
@@ -20,16 +20,16 @@
 </div>
    
 
-<div class="text-xs mt-5 bg-blue-100 px-4 py-2 rounded-md shadow-sm mx-auto mb-4">11-09-2022</div>
+<div class="text-xs mt-20 bg-blue-100 px-4 py-2 rounded-md shadow-sm mx-auto mb-4">11-09-2022</div>
 <div class="md:px-10">
 <div class="flex mx-4 my-2 lg:w-1/2 shadow-sm w-3/4 md:w-2/3 mb-0">
-    <div class="rounded rounded-tl-none py-2 px-4 bg-white">
+    <div class="rounded-md py-2 px-4 bg-white">
         <p class="text-sm text-teal-600 font-medium md:mb-0 mb-1">
             +91 1234567890<span class="pl-2 text-gray-500 font-normal"> ~Invincible</span>
         </p>
-        <p class="text-sm mt-[2px] sm:mt-1">
-            Hi! I am InvincibleInventor, creator of this awesome website and many more complex applications
-        </p>
+        <div class="text-sm mt-[2px] sm:mt-1">
+            Wanna connect with me? Send me a message and I shall be quick to respond. Constructive critiscm is highly appreciated
+        </div>
         <p class="text-right text-xs text-gray-500 mt-[6px]">
             12:45 pm
         </p>
@@ -37,12 +37,30 @@
     
 </div>
 
-<div class="flex mx-4 my-2 mt-1 lg:w-1/2 shadow-sm w-3/4 md:w-2/3 ">
-    <div class="rounded py-2 px-4 bg-white">
-       
-        <p class="text-sm mt-[2px] sm:mt-1">
-            This website is highly inspired by whatsapp and follows its color scheme and branding (no sue please :p)
+<div class="flex mx-4 my-2 lg:w-1/2 shadow-sm w-3/4 md:w-2/3 mb-0">
+    <div class="rounded-md  py-2 px-4 bg-white">
+        <p class="text-sm text-purple-600 font-medium md:mb-0 mb-1">
+            Contact Forms<span class="pl-2 text-gray-500 font-normal"> ~Bot</span>
         </p>
+        <div class="text-sm mt-[2px] sm:mt-1">
+            Please fill out this form
+            <span class="text-blue-500 underline pl-[2px] cursor-pointer " id="form-link" onclick="select('contact')">  Form Link </span>
+        </div>
+        <p class="text-right text-xs text-gray-500 mt-[6px]">
+            12:46 pm
+        </p>
+    </div>
+    
+</div>
+
+<div class="flex mx-4 my-2 lg:w-1/2 shadow-sm w-3/4 md:w-2/3 mb-0">
+    <div class="rounded-md  py-2 px-4 bg-white">
+        <p class="text-sm text-teal-600 font-medium md:mb-0 mb-1">
+            +91 1234567890<span class="pl-2 text-gray-500 font-normal"> ~Invincible</span>
+        </p>
+        <div class="text-sm mt-[2px] sm:mt-1">
+            Wanna connect with me? Send me a message and I shall be quick to respond. Constructive critiscm is highly appreciated
+        </div>
         <p class="text-right text-xs text-gray-500 mt-[6px]">
             12:45 pm
         </p>
